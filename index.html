@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tesla</title>
+</head>
+<body>
+    <img src="./logo.png" alt="logo" class="logo">
+
+    <ul class="lista">
+        <li class="item">
+            <video src="./model-y.mp4" muted loop autoplay></video>
+            <div class="info-carro">
+                <h1>Model Y</h1>
+            </div>
+            <div class="rodape">
+                <button onclick="aparecerFormulario()">Comprar Agora</button>
+                <button class="test-drive">Faça um Test-Drive</button>
+                <p class="texto-rodape">Não garantimos seu veículo imediatamente.</p>
+            </div>
+        </li>
+
+        <li class="item">
+            <img src="./model-3.png" class="img-tesla" alt="imagem model-3">
+            <div class="info-carro">
+                <h1>Model-3</h1>
+                <p class="sub-titulo">Compre agora o seu Tesla</p>
+            </div>
+        </li>
+
+        <li class="item">
+            <img src="./model-x.png" class="img-tesla" alt="imagem model model-x">
+            <div class="info-carro">
+                <h1>Model-X</h1>
+                <p class="sub-titulo">Parcelar a partir de 499 dólares</p>
+            </div>
+        </li>
+
+        <li class="item">
+            <img src="./model-s.png" class="img-tesla" alt="imagem model model-s">
+            <div class="info-carro">
+                <h1>Model-S</h1>
+            </div>
+        </li>
+    </ul>
+
+    <div class="formulario" id="formulario">
+        <button class="fechar" onclick="desaparecerFormulario()">Fechar</button>
+        <form class="fale-conosco" action="https://formsubmit.co/thais.carolina05@gmail.com" method="POST">
+            <input placeholder="Seu nome" type="text" name="nome" class="input">
+            <input placeholder="Seu telefone" type="tel" name="telefone" class="input">
+            <input placeholder="time" type="time" class="input">
+            <input placeholder="date" type="date" class="input">
+             <button class="email">Enviar formulário</button>
+        </form>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
